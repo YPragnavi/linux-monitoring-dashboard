@@ -2,7 +2,6 @@
 
 A real-time Linux infrastructure monitoring project built using Prometheus, Grafana, and Node Exporter for monitoring system performance, resource utilization, and network activity.
 
----
 
 # Project Overview
 
@@ -19,7 +18,6 @@ The setup continuously tracks:
 
 The project simulates a real-world infrastructure monitoring environment commonly used in DevOps, Cloud, and Cybersecurity operations.
 
----
 
 # Technologies Used
 
@@ -29,7 +27,6 @@ The project simulates a real-world infrastructure monitoring environment commonl
 - Node Exporter
 - VirtualBox
 
----
 
 # Project Architecture
 
@@ -43,7 +40,6 @@ Prometheus
 Grafana Dashboard
 ```
 
----
 
 # Features
 
@@ -54,7 +50,6 @@ Grafana Dashboard
 - Alert rules configuration
 - Infrastructure observability
 
----
 
 # Installation Steps
 
@@ -62,7 +57,6 @@ Grafana Dashboard
 
 Create an Ubuntu Server virtual machine using VirtualBox.
 
----
 
 ## 2. Install Node Exporter
 
@@ -70,7 +64,6 @@ Create an Ubuntu Server virtual machine using VirtualBox.
 wget https://github.com/prometheus/node_exporter/releases/download/v1.8.1/node_exporter-1.8.1.linux-amd64.tar.gz
 ```
 
----
 
 ## 3. Install Prometheus
 
@@ -78,7 +71,6 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.8.1/node_e
 wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
 ```
 
----
 
 ## 4. Install Grafana
 
@@ -86,7 +78,6 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/promethe
 sudo apt install grafana -y
 ```
 
----
 
 ## 5. Configure Prometheus
 
@@ -106,7 +97,6 @@ scrape_configs:
       - targets: ['localhost:9100']
 ```
 
----
 
 # Access URLs
 
@@ -116,39 +106,34 @@ scrape_configs:
 | Prometheus | http://localhost:9090 |
 | Node Exporter | http://localhost:9100/metrics |
 
----
 
 # Screenshots
 
 ## Ubuntu Terminal — Services Running
 
-![Ubuntu Terminal](ubuntu_terminal-services_running.jpeg)
+![Ubuntu Terminal](screenshots/ubuntu_terminal-services_running.jpeg)
 
----
+
 
 ## Prometheus Targets Page
 
-![Prometheus Targets](prometheus_target_page.jpeg)
+![Prometheus Targets](screenshots/prometheus_target_page.jpeg)
 
----
 
 ## Node Exporter Metrics Page
 
-![Node Exporter](node_exporter_page.jpeg)
+![Node Exporter](screenshots/node_exporter_page.jpeg)
 
----
+
 
 ## Grafana Dashboard
 
-![Grafana Dashboard](grafana_dashboard.jpeg)
+![Grafana Dashboard](screenshots/grafana_dashboard.jpeg)
 
----
 
 ## Grafana Alert Rules Page
 
-![Grafana Alerts](garafana_alert_rules_page.jpeg)
-
----
+![Grafana Alerts](screenshots/grafana_alert_rules_page.jpeg)
 
 # Key Learnings
 
@@ -159,7 +144,7 @@ scrape_configs:
 - Observability concepts
 - Alert management
 
----
+
 
 # Future Improvements
 
@@ -169,13 +154,12 @@ scrape_configs:
 - Monitor multiple Linux servers
 - Add cybersecurity-focused alerts
 
----
 
 # Conclusion
 
 This project successfully demonstrates a complete Linux monitoring environment using Grafana and Prometheus. It provides practical exposure to monitoring, observability, and infrastructure management concepts used in real-world environments.
 
----
+
 
 # Author
 
